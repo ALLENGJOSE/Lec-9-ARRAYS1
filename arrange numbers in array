@@ -1,0 +1,21 @@
+public class Solution {
+    
+    public static void arrange(int[] arr, int n) {
+    	//Your code goes here
+        int valuetoprint = 1;
+        int startindex = 0 ;
+        int endindex = n - 1 ;
+        while(startindex <= endindex){
+            arr[startindex] = valuetoprint;
+            valuetoprint++;
+            if(endindex == startindex){
+                break;
+            }else{
+                arr[endindex] = valuetoprint;
+                valuetoprint++;
+        }
+            startindex++;
+            endindex--;
+    }
+}
+}
