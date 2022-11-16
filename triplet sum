@@ -1,0 +1,18 @@
+public class Solution {
+    
+    public static int findTriplet(int[] arr, int x) {
+    	//Your code goes here
+        int num = 0;
+        int n = arr.length;
+        for(int i = 0; i < n ; i ++){
+            for(int j = i + 1 ; j < n ; j++){
+                for(int z = j + 1 ; z < n ; z++){
+                    if(arr[i] + arr[j] + arr[z] == x){
+                  num = num + 1 ;
+                    }
+                }
+            }
+        }
+        return num ;
+    }
+}
